@@ -247,6 +247,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonModule>НормализацияСтрок</CommonModule>
+			<CommonModule>НормализацияСтрокПереопределяемый</CommonModule>
 			<DataProcessor>ОчисткаНезначимыхСимволов</DataProcessor>
 			<DataProcessor>Тесты</DataProcessor>
 		</ChildObjects>
