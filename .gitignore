@@ -1,0 +1,6 @@
+.DS_Store
+ConfigDumpInfo.xml
+*.cf
+*.cfe
+*.epf
+~$*

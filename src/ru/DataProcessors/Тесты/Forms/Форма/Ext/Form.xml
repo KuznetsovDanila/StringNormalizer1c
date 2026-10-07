@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Тесты библиотеки «Нормализация строк»</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаКоманды" id="1">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Button name="КнопкаВыполнить" id="3">
+					<CommandName>Form.Command.ВыполнитьТесты</CommandName>
+					<DefaultButton>true</DefaultButton>
+					<ExtendedTooltip name="КнопкаВыполнитьРасширеннаяПодсказка" id="4"/>
+				</Button>
+				<LabelField name="Итог" id="5">
+					<DataPath>Итог</DataPath>
+					<ContextMenu name="ИтогКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ИтогРасширеннаяПодсказка" id="7"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Результаты" id="8">
+			<DataPath>Результаты</DataPath>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ContextMenu name="РезультатыКонтекстноеМеню" id="9"/>
+			<AutoCommandBar name="РезультатыКоманднаяПанель" id="10"/>
+			<SearchStringAddition name="РезультатыСтрокаПоиска" id="11"/>
+			<ViewStatusAddition name="РезультатыСостояниеПросмотра" id="12"/>
+			<SearchControlAddition name="РезультатыУправлениеПоиском" id="13"/>
+			<ChildItems>
+				<InputField name="РезультатыТест" id="14">
+					<DataPath>Результаты.Тест</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тест</v8:content>
+						</v8:item>
+					</Title>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="РезультатыТестКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="РезультатыТестРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="РезультатыРезультат" id="17">
+					<DataPath>Результаты.Результат</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат</v8:content>
+						</v8:item>
+					</Title>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="РезультатыРезультатКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="РезультатыРезультатРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="РезультатыСообщение" id="20">
+					<DataPath>Результаты.Сообщение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщение</v8:content>
+						</v8:item>
+					</Title>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="РезультатыСообщениеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="РезультатыСообщениеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="23">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Тесты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Итог" id="24">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Результаты" id="25">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Тест" id="26">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Результат" id="27">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сообщение" id="28">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьТесты" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить тесты</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыполнитьТесты</Action>
+		</Command>
+	</Commands>
+</Form>
