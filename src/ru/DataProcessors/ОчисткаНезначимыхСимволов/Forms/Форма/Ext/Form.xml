@@ -38,7 +38,7 @@
 					<ChildItems>
 						<CheckBoxField name="ОбъектыИспользовать" id="9">
 							<DataPath>Объекты.Использовать</DataPath>
-							<TitleLocation>none</TitleLocation>
+							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="ОбъектыИспользоватьКонтекстноеМеню" id="10"/>
 							<ExtendedTooltip name="ОбъектыИспользоватьРасширеннаяПодсказка" id="11"/>
 						</CheckBoxField>
@@ -128,7 +128,7 @@
 			<ChildItems>
 				<CheckBoxField name="НайденныеПометка" id="42">
 					<DataPath>Найденные.Пометка</DataPath>
-					<TitleLocation>none</TitleLocation>
+					<TitleLocation>None</TitleLocation>
 					<ContextMenu name="НайденныеПометкаКонтекстноеМеню" id="43"/>
 					<ExtendedTooltip name="НайденныеПометкаРасширеннаяПодсказка" id="44"/>
 				</CheckBoxField>
@@ -352,7 +352,7 @@
 					<v8:content>Найти</v8:content>
 				</v8:item>
 			</Title>
-			<Action>Найти</Action>
+			<Action>ВыполнитьПоиск</Action>
 		</Command>
 		<Command name="ОчиститьОтмеченные" id="79">
 			<Title>

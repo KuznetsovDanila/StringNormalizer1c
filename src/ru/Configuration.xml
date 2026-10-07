@@ -247,9 +247,6 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonModule>НормализацияСтрок</CommonModule>
-			<EventSubscription>НормализацияСтрокПередЗаписьюОбъекта</EventSubscription>
-			<EventSubscription>НормализацияСтрокПередЗаписьюДокумента</EventSubscription>
-			<EventSubscription>НормализацияСтрокОбработкаПроверкиЗаполнения</EventSubscription>
 			<DataProcessor>ОчисткаНезначимыхСимволов</DataProcessor>
 			<DataProcessor>Тесты</DataProcessor>
 		</ChildObjects>
